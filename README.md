@@ -24,14 +24,14 @@ builds a hook from your words → sets the format → asks what's missing (it ne
 up) → writes the draft → checks every line → hands it back. The whole time it writes in your
 voice, not the AI's.
 
-<!-- Optional: add images/workflow.png (the workflow diagram) to show it visually here. -->
+![How the voice skill works](Voice%20Skill.png)
 
 ## What's under the hood
 
 A few plain files, each with one job. The skill file holds only the steps; everything it can
 look up lives in its own file (a bloated skill file confuses the AI).
 
-<!-- Optional: add images/folder-structure.png (the file-map diagram) to show it visually here. -->
+![Folder structure](Skill%20File%20Structure.png)
 
 | File | Job |
 |---|---|
@@ -55,8 +55,8 @@ look up lives in its own file (a bloated skill file confuses the AI).
 ## Use
 
 - **First run:** the skill sees your `voice.md` is empty and runs a short interview — it asks
-  for a few samples of your real writing, walks you through the questions in `interview.md`,
-  then builds your `voice.md`.
+  for a few samples of your real writing, walks you through the interview questions in
+  `onboarding.md`, then builds your `voice.md`.
 - **After that:** just paste a rough thought and ask for a LinkedIn post. It drafts in your
   voice.
 
